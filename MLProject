@@ -5,6 +5,6 @@ entry_points:
     command: python main.py --bootstrap {bootstrap} --n_estimators {n_estimators} --max_features {max_features} --random_state {random_state}
     parameters:
       bootstrap: {type: bool, default: False}
-      n_estimators: {type: int, default: 100}
+      n_estimators: {type: int, default: 200}
       max_features: {type: int, default: 4}
       random_state: {type: int, default: 42}
