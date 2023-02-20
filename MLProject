@@ -1,0 +1,10 @@
+conda_env: conda.yml
+
+entry_points:
+  main:
+    command: python main.py --bootstrap {bootstrap} --n_estimators {n_estimators} --max_features {max_features} --random_sample {random_sample}
+    parameters:
+      bootstrap: {type: bool, default: False}
+      n_estimators: {type: int, default: 100}
+      max_features: {type: int, default: 4}
+      random_sample: {type: int, default: 42}
